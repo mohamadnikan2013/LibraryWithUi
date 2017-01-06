@@ -25,7 +25,9 @@ SOURCES += main.cpp\
     Logic/Research.cpp \
     Logic/ScienceBook.cpp \
     Logic/Transaction.cpp \
-    Logic/Writer.cpp
+    Logic/Writer.cpp \
+    librarianui.cpp \
+    userui.cpp
 
 HEADERS  += mainwindow.h \
     Logic/ArtBook.h \
@@ -39,6 +41,10 @@ HEADERS  += mainwindow.h \
     Logic/Research.h \
     Logic/ScienceBook.h \
     Logic/Transaction.h \
-    Logic/Writer.h
+    Logic/Writer.h \
+    librarianui.h \
+    userui.h
 
-FORMS    += mainwindow.ui
+FORMS    += mainwindow.ui \
+    librarianui.ui \
+    userui.ui
