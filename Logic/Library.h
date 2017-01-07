@@ -63,7 +63,7 @@ public:
 
     void remove_librarian();
 
-    void add_member(string name);
+    long add_member(string name);
 
     void remove_member();
 

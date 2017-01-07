@@ -36,9 +36,12 @@
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
      <item>
-      <widget class="QCommandLinkButton" name="commandLinkButton">
+      <widget class="QCommandLinkButton" name="addmember">
        <property name="text">
         <string>add new member</string>
+       </property>
+       <property name="description">
+        <string/>
        </property>
       </widget>
      </item>
@@ -47,15 +50,15 @@
    <widget class="QWidget" name="horizontalLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>220</x>
-      <y>30</y>
+      <x>210</x>
+      <y>40</y>
       <width>189</width>
       <height>80</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_3">
      <item>
-      <widget class="QCommandLinkButton" name="commandLinkButton_2">
+      <widget class="QCommandLinkButton" name="addnewbook">
        <property name="text">
         <string>add new book</string>
        </property>
@@ -66,8 +69,8 @@
    <widget class="QWidget" name="horizontalLayoutWidget_5">
     <property name="geometry">
      <rect>
-      <x>410</x>
-      <y>130</y>
+      <x>440</x>
+      <y>160</y>
       <width>189</width>
       <height>80</height>
      </rect>
@@ -85,15 +88,15 @@
    <widget class="QWidget" name="horizontalLayoutWidget_6">
     <property name="geometry">
      <rect>
-      <x>420</x>
-      <y>30</y>
+      <x>430</x>
+      <y>40</y>
       <width>189</width>
       <height>80</height>
      </rect>
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_7">
      <item>
-      <widget class="QCommandLinkButton" name="commandLinkButton_3">
+      <widget class="QCommandLinkButton" name="addnewwirter">
        <property name="text">
         <string>add new writer</string>
        </property>
@@ -104,8 +107,8 @@
    <widget class="QWidget" name="horizontalLayoutWidget_3">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>150</y>
+      <x>20</x>
+      <y>160</y>
       <width>189</width>
       <height>80</height>
      </rect>

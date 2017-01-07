@@ -28,7 +28,10 @@ SOURCES += main.cpp\
     Logic/Transaction.cpp \
     Logic/Writer.cpp \
     librarianui.cpp \
-    signup.cpp
+    signup.cpp \
+    addmemberui.cpp \
+    addwriterui.cpp \
+    addbook.cpp
 
 HEADERS  += mainwindow.h \
     Logic/ArtBook.h \
@@ -44,9 +47,14 @@ HEADERS  += mainwindow.h \
     Logic/Transaction.h \
     Logic/Writer.h \
     librarianui.h \
-    userui.h \
-    signup.h
+    signup.h \
+    addmemberui.h \
+    addwriterui.h \
+    addbook.h
 
 FORMS    += mainwindow.ui \
     librarianui.ui \
-    signup.ui
+    signup.ui \
+    addmemberui.ui \
+    addwriterui.ui \
+    addbook.ui

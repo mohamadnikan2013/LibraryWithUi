@@ -56,9 +56,10 @@ void Library::return_book(long borrowed_book_id) {
     transaction->finished(this->date);
 }
 
-void Library::add_member(string name) {
+long Library::add_member(string name) {
     Member *member = new Member(name, this->date);
     this->members.insert(make_pair(member->getMember_id(), member));
+    return member->getMember_id();
 }
 
 long Library::add_librarian(string name, string password) {

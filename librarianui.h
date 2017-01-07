@@ -16,6 +16,13 @@ public:
     explicit LibrarianUi(QWidget *parent = 0);
     ~LibrarianUi();
 
+private slots:
+    void on_addmember_clicked();
+
+    void on_addnewwirter_clicked();
+
+    void on_addnewbook_clicked();
+
 private:
     Ui::LibrarianUi *ui;
 };
