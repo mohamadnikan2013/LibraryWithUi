@@ -6,8 +6,14 @@
 #define AP_ARTBOOK_H
 
 #include "Book.h"
+#include "Writer.h"
+#include <iostream>
 
-class Book;
+using namespace std;
+
+class Writer;
+
+//class Book;
 
 class ArtBook : public Book {
 public:

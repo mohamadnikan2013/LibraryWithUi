@@ -26,3 +26,7 @@ const string &Writer::getName() const {
 long Writer::getWriter_id() const {
     return writer_id;
 }
+
+Writer::Writer(const string &name) : name(name) {
+    this->writer_id = Library::Id_generator();
+}

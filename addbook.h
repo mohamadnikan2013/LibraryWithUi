@@ -2,7 +2,9 @@
 #define ADDBOOK_H
 
 #include <QWidget>
+#include"Logic/Library.h"
 
+extern Library* library;
 namespace Ui {
 class AddBook;
 }

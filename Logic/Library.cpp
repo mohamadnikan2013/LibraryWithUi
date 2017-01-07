@@ -3,12 +3,47 @@
 //
 
 #include "Library.h"
+#include "ArtBook.h"
+#include "ScienceBook.h"
+#include "Research.h"
+#include "Novel.h"
+
+class Writer;
+
+class Novel;
+
+class Research;
+
+class ArtBook;
+
+class ScienceBook;
 
 Library::Library(const string &name, Date *date) : name(name), date(date) {}
 
-void Library::add_book(string book_name, Writer *writer) {
-    Book *book = new Book(book_name, writer);
-    this->books.insert(make_pair(book->getBook_id(), book));
+long Library::add_book(string book_name, long writer_id, string type, string description) {
+    auto it = this->writers.find(writer_id);
+    if (it == this->writers.end())
+        return 0;
+    Writer *writer = it->second;
+    if (type == "sci") {
+        ScienceBook *scienceBook = new ScienceBook(name, writer, description);
+        this->books.insert(make_pair(scienceBook->getBook_id(), scienceBook));
+        return scienceBook->getBook_id();
+
+    } else if (type == "nov") {
+        Novel *novel = new Novel(name, writer, description);
+        this->books.insert(make_pair(novel->getBook_id(), novel));
+        return novel->getBook_id();
+    } else if (type == "res") {
+        Research *research = new Research(name, writer, description);
+        this->books.insert(make_pair(research->getBook_id(), research));
+        return research->getBook_id();
+    } else if (type == "art") {
+        ArtBook *artBook = new ArtBook(name, writer);
+        this->books.insert(make_pair(artBook->getBook_id(), artBook));
+        return artBook->getBook_id();
+    }
+    return 0;
 }
 
 long Library::Id_generator() {
@@ -77,4 +112,11 @@ bool Library::login(long id, string password) {
         return !(librarian->isIs_deleted() || (librarian->getPassword() != password));
     } else
         return false;
+}
+
+long Library::add_writer(string name) {
+    Writer *writer = new Writer(name);
+    long id = writer->getWriter_id();
+    this->writers.insert(make_pair(id, writer));
+    return id;
 }

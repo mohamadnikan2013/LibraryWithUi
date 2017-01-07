@@ -8,23 +8,27 @@
 #include <iostream>
 #include <set>
 #include "Book.h"
+#include "Library.h"
+
+using namespace std;
 
 class Book;
+
+class Library;
 
 using namespace std;
 
 class Writer {
     long writer_id;
-public:
-    long getWriter_id() const;
-
-public:
-    const string &getName() const;
-
-private:
     string name;
     set<Book *> books;
 public:
+    long getWriter_id() const;
+
+    const string &getName() const;
+
+    Writer(const string &name);
+
     void show_written_books();
 
     void add_book(Book *book);

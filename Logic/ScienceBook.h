@@ -5,12 +5,18 @@
 #ifndef AP_SCIENCEBOOK_H
 #define AP_SCIENCEBOOK_H
 
-#include <iostream>
 
 #include "Book.h"
+#include "Writer.h"
+#include <iostream>
 
 using namespace std;
-class Book;
+
+
+class Writer;
+
+
+//class Book;
 
 class ScienceBook : public Book {
     string Field;

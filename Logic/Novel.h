@@ -6,10 +6,16 @@
 #define AP_NOVEL_H
 
 #include "Book.h"
+#include "Writer.h"
+#include <iostream>
 
-class Book;
+using namespace std;
 
-class Novel: public Book {
+class Writer;
+
+//class Book;
+
+class Novel : public Book {
     string genre;
 public:
     Novel(const string &name, Writer *writer, const string genre);

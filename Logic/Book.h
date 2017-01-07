@@ -11,6 +11,9 @@
 #include "Writer.h"
 #include "Date.h"
 #include "Transaction.h"
+#include "Library.h"
+
+class Library;
 
 class Writer;
 
@@ -36,7 +39,7 @@ public:
 
     bool isIs_availble() const;
 
-    const vector<Transaction *> & getTransactions() const;
+    const vector<Transaction *> &getTransactions() const;
 
     Book(const string &name, Writer *writer);
 

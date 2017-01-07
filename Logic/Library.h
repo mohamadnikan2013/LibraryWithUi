@@ -14,18 +14,26 @@
 #include "Date.h"
 #include "Transaction.h"
 #include "Member.h"
-
+#include "Writer.h"
+//#include "ScienceBook.h"
+//#include "ArtBook.h"
+//#include "Novel.h"
+//#include "Research.h"
 #include <random>
 
-class Date;
-
 class Book;
+
+class Date;
 
 class Librarian;
 
 class Transaction;
 
 class Member;
+
+class Writer;
+
+
 
 using namespace std;
 
@@ -43,7 +51,7 @@ public:
 
     static long Id_generator();
 
-    void add_book(string book_name, Writer *writer);
+    long add_book(string book_name, long writer_id, string type, string description = "");
 
     void remove_book(long id);
 
@@ -54,6 +62,8 @@ public:
     void show_books();
 
     void show_borrowed_books();
+
+    long add_writer(string name);
 
     void show_available_books();
 

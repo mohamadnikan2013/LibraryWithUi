@@ -3,7 +3,6 @@
 //
 
 #include "Book.h"
-#include "Library.h"
 
 Book::Book(const string &name, Writer *writer) : name(name), writer(writer) {
     this->book_id = Library::Id_generator();
