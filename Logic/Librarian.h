@@ -12,11 +12,16 @@ using namespace std;
 class Librarian {
     long librarian_id;
     string name;
-    long password;
+    string password;
     bool is_deleted;
 public:
-    Librarian(const string &name);
+    Librarian(const string &name, string password);
 
+    bool isIs_deleted() const;
+
+    const string &getPassword() const;
+
+    long getLibrarian_id() const;
 };
 
 

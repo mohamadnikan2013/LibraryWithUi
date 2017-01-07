@@ -11,6 +11,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = MyLibrary
 TEMPLATE = app
 
+CONFIG += c++11
 
 SOURCES += main.cpp\
         mainwindow.cpp \
@@ -27,7 +28,7 @@ SOURCES += main.cpp\
     Logic/Transaction.cpp \
     Logic/Writer.cpp \
     librarianui.cpp \
-    userui.cpp
+    signup.cpp
 
 HEADERS  += mainwindow.h \
     Logic/ArtBook.h \
@@ -43,8 +44,9 @@ HEADERS  += mainwindow.h \
     Logic/Transaction.h \
     Logic/Writer.h \
     librarianui.h \
-    userui.h
+    userui.h \
+    signup.h
 
 FORMS    += mainwindow.ui \
     librarianui.ui \
-    userui.ui
+    signup.ui

@@ -6,9 +6,20 @@
 #include "Librarian.h"
 #include "Library.h"
 
-Librarian::Librarian(const string &name) : name(name) {
+Librarian::Librarian(const string &name, string password) : name(name) , password(password) {
     this->is_deleted = false;
     this->librarian_id = Library::Id_generator();
-    std::srand((unsigned int) std::time(0)); // use current time as seed for random generator
-    this->password = std::rand();
+    this->password = password;
+}
+
+long Librarian::getLibrarian_id() const {
+    return librarian_id;
+}
+
+const string &Librarian::getPassword() const {
+    return password;
+}
+
+bool Librarian::isIs_deleted() const {
+    return is_deleted;
 }

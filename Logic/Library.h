@@ -30,8 +30,8 @@ class Member;
 using namespace std;
 
 class Library {
-    set<long> id_set;
     string name;
+    string password;
     map<long, Librarian *> librarians;
     map<long, Member *> members;
     map<long, Book *> books;
@@ -57,7 +57,7 @@ public:
 
     void show_available_books();
 
-    void add_librarian(string name);
+    long add_librarian(string name, string password);
 
     void show_librarians();
 
@@ -70,6 +70,8 @@ public:
     void show_members();
 
     void find_book();
+
+    bool login(long id, string password);
 
 };
 

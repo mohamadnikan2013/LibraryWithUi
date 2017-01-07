@@ -1,21 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <author/>
- <comment/>
- <exportmacro/>
  <class>LibrarianUi</class>
  <widget class="QWidget" name="LibrarianUi">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>690</width>
+    <height>379</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Form</string>
   </property>
+  <widget class="QGroupBox" name="groupBox">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>651</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Wellcome   </string>
+   </property>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>189</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QCommandLinkButton" name="commandLinkButton">
+       <property name="text">
+        <string>add new member</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>30</y>
+      <width>189</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_3">
+     <item>
+      <widget class="QCommandLinkButton" name="commandLinkButton_2">
+       <property name="text">
+        <string>add new book</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_5">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>130</y>
+      <width>189</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_6">
+     <item>
+      <widget class="QCommandLinkButton" name="commandLinkButton_4">
+       <property name="text">
+        <string>list of books</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_6">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>30</y>
+      <width>189</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_7">
+     <item>
+      <widget class="QCommandLinkButton" name="commandLinkButton_3">
+       <property name="text">
+        <string>add new writer</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>150</y>
+      <width>189</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_4">
+     <item>
+      <widget class="QCommandLinkButton" name="commandLinkButton_6">
+       <property name="text">
+        <string>list of folan</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>160</y>
+      <width>189</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QCommandLinkButton" name="commandLinkButton_7">
+       <property name="text">
+        <string>list of member</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>250</y>
+      <width>189</width>
+      <height>80</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <item>
+      <widget class="QCommandLinkButton" name="commandLinkButton_5">
+       <property name="text">
+        <string>list of bahman</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <zorder>horizontalLayoutWidget</zorder>
+   <zorder>horizontalLayoutWidget_2</zorder>
+   <zorder>horizontalLayoutWidget_5</zorder>
+   <zorder>horizontalLayoutWidget_6</zorder>
+   <zorder>commandLinkButton_4</zorder>
+   <zorder>horizontalLayoutWidget_3</zorder>
+   <zorder>verticalLayoutWidget</zorder>
+   <zorder>horizontalLayoutWidget_4</zorder>
+  </widget>
  </widget>
- <pixmapfunction/>
+ <resources/>
  <connections/>
 </ui>

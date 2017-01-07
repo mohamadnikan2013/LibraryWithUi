@@ -61,7 +61,19 @@ void Library::add_member(string name) {
     this->members.insert(make_pair(member->getMember_id(), member));
 }
 
-void Library::add_librarian(string name) {
-    Librarian *librarian = new Librarian(name);
+long Library::add_librarian(string name, string password) {
+    Librarian *librarian = new Librarian(name, password);
+    this->librarians.insert(make_pair(librarian->getLibrarian_id(), librarian));
+    return librarian->getLibrarian_id();
 
+}
+
+bool Library::login(long id, string password) {
+    auto it = this->librarians.find(id);
+    if (it != this->librarians.end()) {
+        cout << "ge";
+        Librarian *librarian = it->second;
+        return !(librarian->isIs_deleted() || (librarian->getPassword() != password));
+    } else
+        return false;
 }
