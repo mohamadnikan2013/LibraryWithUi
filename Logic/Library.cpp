@@ -174,7 +174,7 @@ string Library::remove_member(long id) {
 }
 
 string Library::show_available_books() {
-    string str = "Issued Book are :  \n";
+    string str = "Available Book are :  \n";
     for (auto it : this->books) {
         Book *book = it.second;
         if (book->isIs_availble()) {
