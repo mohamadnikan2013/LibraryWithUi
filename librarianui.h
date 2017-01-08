@@ -23,6 +23,8 @@ private slots:
 
     void on_addnewbook_clicked();
 
+    void on_commandLinkButton_7_clicked();
+
 private:
     Ui::LibrarianUi *ui;
 };

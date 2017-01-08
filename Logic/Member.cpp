@@ -51,3 +51,7 @@ Member::Member(const string &name, Date *date_of_membership) : name(name) {
     this->member_id = Library::Id_generator();
     this->is_deleted = false;
 }
+
+bool Member::isIs_deleted() const {
+    return is_deleted;
+}

@@ -40,6 +40,8 @@ public:
 
     const string &getName() const;
 
+    bool isIs_deleted() const;
+
     Date *getDate_of_membership() const;
 
     Bill *getBill() const;

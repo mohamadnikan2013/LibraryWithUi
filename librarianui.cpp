@@ -3,6 +3,7 @@
 #include"addmemberui.h"
 #include"addwriterui.h"
 #include"addbook.h"
+#include"showmembers.h"
 
 
 LibrarianUi::LibrarianUi(QWidget *parent) :
@@ -36,4 +37,11 @@ void LibrarianUi::on_addnewbook_clicked()
     this->hide();
     AddBook * abu = new AddBook;
     abu->show();
+}
+
+void LibrarianUi::on_commandLinkButton_7_clicked()
+{
+        this->hide();
+           ShowMembers * sm = new ShowMembers;
+           sm->show();
 }

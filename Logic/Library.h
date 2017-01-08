@@ -77,7 +77,7 @@ public:
 
     void remove_member();
 
-    void show_members();
+    string show_members();
 
     void find_book();
 

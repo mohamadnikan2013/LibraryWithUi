@@ -17,6 +17,9 @@ public:
     explicit AddBook(QWidget *parent = 0);
     ~AddBook();
 
+private slots:
+    void on_add_clicked();
+
 private:
     Ui::AddBook *ui;
 };

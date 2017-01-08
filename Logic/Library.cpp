@@ -120,3 +120,14 @@ long Library::add_writer(string name) {
     this->writers.insert(make_pair(id, writer));
     return id;
 }
+
+string Library::show_members() {
+    string str = "List of Member is : \n";
+    for(auto m : this->members) {
+        if (!m.second->isIs_deleted()) {
+            str += m.second->getMember_id() + "   " + m.second->getName()+"\n";
+        }
+    }
+    return str;
+
+}
