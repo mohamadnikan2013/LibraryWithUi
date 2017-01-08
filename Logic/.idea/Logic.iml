@@ -3,25 +3,25 @@
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/Transaction.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ScienceBook.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Book.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Member.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Writer.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Novel.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/ScienceBook.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Book.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bill.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Date.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Writer.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Library.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Member.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Novel.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Research.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Bill.h" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ScienceBook.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ArtBook.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Novel.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/CMakeLists.txt" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Date.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/main.cpp" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/ScienceBook.h" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Library.h" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/ArtBook.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Librarian.cpp" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Transaction.cpp" isTestSource="false" />

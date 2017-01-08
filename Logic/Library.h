@@ -55,7 +55,7 @@ public:
 
     void remove_book(long id);
 
-    void borrow_book(long borrowed_book_id, long member_id);
+    bool borrow_book(long borrowed_book_id, long member_id);
 
     void return_book(long borrowed_book_id);
 

@@ -32,7 +32,9 @@ SOURCES += main.cpp\
     addmemberui.cpp \
     addwriterui.cpp \
     addbook.cpp \
-    showmembers.cpp
+    showmembers.cpp \
+    borrowboow.cpp \
+    returnbook.cpp
 
 HEADERS  += mainwindow.h \
     Logic/ArtBook.h \
@@ -52,7 +54,9 @@ HEADERS  += mainwindow.h \
     addmemberui.h \
     addwriterui.h \
     addbook.h \
-    showmembers.h
+    showmembers.h \
+    borrowboow.h \
+    returnbook.h
 
 FORMS    += mainwindow.ui \
     librarianui.ui \
@@ -60,4 +64,6 @@ FORMS    += mainwindow.ui \
     addmemberui.ui \
     addwriterui.ui \
     addbook.ui \
-    showmembers.ui
+    showmembers.ui \
+    borrowboow.ui \
+    returnbook.ui

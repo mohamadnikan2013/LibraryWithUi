@@ -56,26 +56,27 @@ void Library::remove_book(long id) {
     this->books.erase(this->books.find(id));
 }
 
-void Library::borrow_book(long borrowed_book_id, long member_id) {
+bool Library::borrow_book(long borrowed_book_id, long member_id) {
     Member *member = this->members[member_id];
     Book *book = this->books[borrowed_book_id];
     Date *date = this->date;
     if (member->getNumber_of_book_issued() >= member->getMax_book_limit()) {
         cout << "limited" << endl;
-        return;
+        return false;
     }
-    if (book->isIs_availble()) {
-        cout << "this bool is not availble " << endl;
-        return;
+    if (!book->isIs_availble()) {
+        cout << "this book is not availble " << endl;
+        return false;
     }
     if (book->isIs_issued()) {
         cout << "this book is issued";
-        return;
+        return false;
     }
     Transaction *transaction = new Transaction(book, member, date);
     this->transactions.insert(make_pair(transaction->getTrans_id(), transaction));
     member->borrowing(transaction);
     book->borrowed(transaction);
+    return true;
 }
 
 void Library::return_book(long borrowed_book_id) {

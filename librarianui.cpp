@@ -4,7 +4,7 @@
 #include"addwriterui.h"
 #include"addbook.h"
 #include"showmembers.h"
-
+#include"borrowboow.h"
 
 LibrarianUi::LibrarianUi(QWidget *parent) :
     QWidget(parent),
@@ -44,4 +44,11 @@ void LibrarianUi::on_commandLinkButton_7_clicked()
         this->hide();
            ShowMembers * sm = new ShowMembers;
            sm->show();
+}
+
+void LibrarianUi::on_commandLinkButton_6_clicked()
+{
+    this->hide();
+       BorrowBoow * sm = new BorrowBoow;
+       sm->show();
 }
