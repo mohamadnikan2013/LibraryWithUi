@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>ShowMembers</class>
- <widget class="QWidget" name="ShowMembers">
+ <class>ShowBorrowedBook</class>
+ <widget class="QWidget" name="ShowBorrowedBook">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>684</width>
-    <height>375</height>
+    <width>593</width>
+    <height>361</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,18 +16,18 @@
   <widget class="QListView" name="listView">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>10</y>
-     <width>411</width>
-     <height>321</height>
+     <x>15</x>
+     <y>11</y>
+     <width>571</width>
+     <height>341</height>
     </rect>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>340</y>
+     <x>40</x>
+     <y>320</y>
      <width>99</width>
      <height>27</height>
     </rect>

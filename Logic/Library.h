@@ -15,10 +15,6 @@
 #include "Transaction.h"
 #include "Member.h"
 #include "Writer.h"
-//#include "ScienceBook.h"
-//#include "ArtBook.h"
-//#include "Novel.h"
-//#include "Research.h"
 #include <random>
 
 class Book;
@@ -63,11 +59,11 @@ public:
 
     double Pay(long user_id);
 
-    void show_borrowed_books();
+    string show_borrowed_books();
 
     long add_writer(string name);
 
-    void show_available_books();
+    string show_available_books();
 
     long add_librarian(string name, string password);
 
@@ -77,11 +73,11 @@ public:
 
     long add_member(string name);
 
-    void remove_member();
+    string remove_member(long id);
 
     string show_members();
 
-    void find_book();
+    long find_book(string name);
 
     bool login(long id, string password);
 

@@ -18,7 +18,7 @@ public:
 
     void set_date(int month, int day, int year);
 
-    void display();
+    string display();
 
     int days_so_far();
 

@@ -56,3 +56,8 @@ Member::Member(const string &name, Date *date_of_membership) : name(name) {
 bool Member::isIs_deleted() const {
     return is_deleted;
 }
+
+string Member::remove() {
+    double pay = this->bill->pay_bill();
+    return "He/She have to Pay " + to_string(pay) + "and return " + to_string(this->number_of_book_issued) + "books \n";
+}

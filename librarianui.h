@@ -31,6 +31,8 @@ private slots:
 
     void on_commandLinkButton_clicked();
 
+    void on_commandLinkButton_3_clicked();
+
 private:
     Ui::LibrarianUi *ui;
 };

@@ -10,8 +10,8 @@ void Date::set_date(int month, int day, int year) {
     this->day = day, this->month = month, this->year = year;
 }
 
-void Date::display() {
-    cout << '\n' << name[month - 1] << ' ' << day << "," << year << '\n';
+string Date::display() {
+    return this->name[month - 1] + " " + std::to_string(this->day) + "," + to_string(year) + " \n";
 }
 //return date from year begging
 

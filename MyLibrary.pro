@@ -35,7 +35,12 @@ SOURCES += main.cpp\
     showmembers.cpp \
     borrowboow.cpp \
     returnbook.cpp \
-    pay.cpp
+    pay.cpp \
+    showborrowedbook.cpp \
+    findbook.cpp \
+    removemember.cpp \
+    removebook.cpp \
+    showavailablebook.cpp
 
 HEADERS  += mainwindow.h \
     Logic/ArtBook.h \
@@ -58,7 +63,12 @@ HEADERS  += mainwindow.h \
     showmembers.h \
     borrowboow.h \
     returnbook.h \
-    pay.h
+    pay.h \
+    showborrowedbook.h \
+    findbook.h \
+    removemember.h \
+    removebook.h \
+    showavailablebook.h
 
 FORMS    += mainwindow.ui \
     librarianui.ui \
@@ -69,4 +79,9 @@ FORMS    += mainwindow.ui \
     showmembers.ui \
     borrowboow.ui \
     returnbook.ui \
-    pay.ui
+    pay.ui \
+    showborrowedbook.ui \
+    findbook.ui \
+    removemember.ui \
+    removebook.ui \
+    showavailablebook.ui

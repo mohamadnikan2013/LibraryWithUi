@@ -142,3 +142,44 @@ double Library::Pay(long user_id) {
     Member *member = it->second;
     return member->getBill()->pay_bill();
 }
+
+string Library::show_borrowed_books() {
+    string str = "Issued Book are :  \n";
+    for (auto it : this->books) {
+        Book *book = it.second;
+        if (book->isIs_issued()) {
+            str += "name : " + book->getName() + "  memeber  : " + book->last_transaction()->getMember()->getName() +
+                   " date issued is : " +
+                   book->last_transaction()->getIssue_date()->display() + "\n";
+        }
+    }
+    return str;
+}
+
+long Library::find_book(string name) {
+    for (auto it : this->books) {
+        Book *book = it.second;
+        if (book->getName() == name) {
+            return book->getBook_id();
+        }
+    }
+    return 0;
+}
+
+string Library::remove_member(long id) {
+    Member *member = this->members.find(id)->second;
+    string str = member->remove();
+    this->members.erase(this->members.find(id));
+    return str;
+}
+
+string Library::show_available_books() {
+    string str = "Issued Book are :  \n";
+    for (auto it : this->books) {
+        Book *book = it.second;
+        if (book->isIs_availble()) {
+            str += "name : " + book->getName() + "\n";
+        }
+    }
+    return str;
+}
