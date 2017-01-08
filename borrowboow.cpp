@@ -1,6 +1,7 @@
 #include "borrowboow.h"
 #include "ui_borrowboow.h"
 #include"QMessageBox"
+#include"librarianui.h"
 #include"mainwindow.h"
 BorrowBoow::BorrowBoow(QWidget *parent) :
     QWidget(parent),
@@ -32,7 +33,8 @@ void BorrowBoow::on_Borrow_clicked()
     messageBox.critical(0,"Wrong","something go wrong the prosses failed");
     messageBox.setFixedSize(500,200);
     messageBox.show();
+
     }
-    MainWindow * w = new MainWindow();
-    w->show();
+    LibrarianUi *l = new LibrarianUi;
+    l->show();
 }

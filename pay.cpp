@@ -1,5 +1,5 @@
-#include "returnbook.h"
-#include "ui_returnbook.h"
+#include "pay.h"
+#include "ui_pay.h"
 #include"QMessageBox"
 #include"mainwindow.h"
 #include"Logic/Library.h"
@@ -9,28 +9,29 @@
 using namespace std;
 
 extern Library* library;
-ReturnBook::ReturnBook(QWidget *parent) :
+Pay::Pay(QWidget *parent) :
     QWidget(parent),
-    ui(new Ui::ReturnBook)
+    ui(new Ui::Pay)
 {
     ui->setupUi(this);
 }
 
-ReturnBook::~ReturnBook()
+Pay::~Pay()
 {
     delete ui;
 }
 
-void ReturnBook::on_pushButton_clicked()
+void Pay::on_pushButton_2_clicked()
 {
-    long id = ui->bookId->text().toInt();
-    library->return_book(id);
+    long id = ui->Id->text().toInt();
+    double pay = library->Pay(id);
     this->hide();
     QMessageBox messageBox;
-    messageBox.information(0,"Ok","OK");
+    QString str=  "He/She has to pay  ";
+    str+=QString::number(pay);
+    messageBox.information(0,"Ok",str);
     messageBox.setFixedSize(500,200);
     messageBox.show();
     LibrarianUi *l = new LibrarianUi;
     l->show();
-
 }

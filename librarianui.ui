@@ -19,7 +19,29 @@
      <property name="title">
       <string>Wellcome   </string>
      </property>
-     <layout class="QFormLayout" name="formLayout">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="3" column="1">
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QCommandLinkButton" name="commandLinkButton_7">
+          <property name="text">
+           <string>list of member</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="4" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QCommandLinkButton" name="addnewwirter">
+          <property name="text">
+           <string>add new writer</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
       <item row="0" column="0">
        <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
@@ -29,6 +51,28 @@
           </property>
           <property name="description">
            <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="2" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <widget class="QCommandLinkButton" name="addnewbook">
+          <property name="text">
+           <string>add new book</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="5" column="1">
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QCommandLinkButton" name="commandLinkButton_4">
+          <property name="text">
+           <string>list of books</string>
           </property>
          </widget>
         </item>
@@ -56,49 +100,40 @@
         </item>
        </layout>
       </item>
-      <item row="2" column="1">
-       <layout class="QHBoxLayout" name="horizontalLayout_3">
-        <item>
-         <widget class="QCommandLinkButton" name="addnewbook">
-          <property name="text">
-           <string>add new book</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
+      <item row="1" column="0">
+       <widget class="QCommandLinkButton" name="commandLinkButton">
+        <property name="text">
+         <string>PayOut</string>
+        </property>
+       </widget>
       </item>
-      <item row="3" column="1">
-       <layout class="QVBoxLayout" name="verticalLayout">
-        <item>
-         <widget class="QCommandLinkButton" name="commandLinkButton_7">
-          <property name="text">
-           <string>list of member</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
+      <item row="2" column="0">
+       <widget class="QCommandLinkButton" name="commandLinkButton_2">
+        <property name="text">
+         <string>Remove Book</string>
+        </property>
+       </widget>
       </item>
-      <item row="4" column="1">
-       <layout class="QHBoxLayout" name="horizontalLayout_7">
-        <item>
-         <widget class="QCommandLinkButton" name="addnewwirter">
-          <property name="text">
-           <string>add new writer</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
+      <item row="3" column="0">
+       <widget class="QCommandLinkButton" name="commandLinkButton_3">
+        <property name="text">
+         <string>Show Borrowed Book</string>
+        </property>
+       </widget>
       </item>
-      <item row="5" column="1">
-       <layout class="QHBoxLayout" name="horizontalLayout_6">
-        <item>
-         <widget class="QCommandLinkButton" name="commandLinkButton_4">
-          <property name="text">
-           <string>list of books</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
+      <item row="4" column="0">
+       <widget class="QCommandLinkButton" name="commandLinkButton_8">
+        <property name="text">
+         <string>Show Availbale Book</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QCommandLinkButton" name="commandLinkButton_9">
+        <property name="text">
+         <string>Remove Account</string>
+        </property>
+       </widget>
       </item>
      </layout>
     </widget>

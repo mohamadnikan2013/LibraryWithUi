@@ -10,6 +10,8 @@ void Bill::update_bill(double money) {
     this->amount += money;
 }
 
-void Bill::pay_bill() {
+double Bill::pay_bill() {
+    double am =  this->amount ;
     this->amount = 0;
+    return am;
 }

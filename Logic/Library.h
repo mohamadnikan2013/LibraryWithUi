@@ -61,6 +61,8 @@ public:
 
     void show_books();
 
+    double Pay(long user_id);
+
     void show_borrowed_books();
 
     long add_writer(string name);

@@ -124,11 +124,21 @@ long Library::add_writer(string name) {
 
 string Library::show_members() {
     string str = "List of Member is : \n";
-    for(auto m : this->members) {
+    for (auto m : this->members) {
         if (!m.second->isIs_deleted()) {
-            str += m.second->getMember_id() + "   " + m.second->getName()+"\n";
+            str += m.second->getMember_id() + "   " + m.second->getName() + "\n";
         }
     }
     return str;
 
+}
+
+double Library::Pay(long user_id) {
+    auto it = this->members.find(user_id);
+    if (it == this->members.end()) {
+        cout << "no member ";
+        return 0;
+    }
+    Member *member = it->second;
+    return member->getBill()->pay_bill();
 }

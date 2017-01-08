@@ -12,7 +12,7 @@ class Bill {
 public:
     Bill(double amount = 0);
 
-    void pay_bill();
+    double pay_bill();
 
     void update_bill(double money);
 };

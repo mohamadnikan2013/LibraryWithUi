@@ -5,6 +5,8 @@
 #include"addbook.h"
 #include"showmembers.h"
 #include"borrowboow.h"
+#include"returnbook.h"
+#include"pay.h"
 
 LibrarianUi::LibrarianUi(QWidget *parent) :
     QWidget(parent),
@@ -50,5 +52,19 @@ void LibrarianUi::on_commandLinkButton_6_clicked()
 {
     this->hide();
        BorrowBoow * sm = new BorrowBoow;
+       sm->show();
+}
+
+void LibrarianUi::on_commandLinkButton_5_clicked()
+{
+    this->hide();
+       ReturnBook * sm = new ReturnBook;
+       sm->show();
+}
+
+void LibrarianUi::on_commandLinkButton_clicked()
+{
+    this->hide();
+       Pay * sm = new Pay;
        sm->show();
 }
